@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .title-div {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      background-color: rgb(238, 236, 236);
+    }
+    .links {
+      display: flex;
+      gap: 2rem;
+      margin-right: 2rem;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .sub-main-explore {
+      padding-top: 8% !important;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .img {
+      display: flex;
+      justify-content: center;
+    }
+    .blogging-gif {
+      border-radius: 50%;
+    }
+
+    .explore-title {
+      text-align: center;
+    }
+    .features {
+      margin-top: 2%;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .each-feature {
+      border: 1px solid grey;
+      padding: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .each-feature:hover {
+      background-color: rgb(223, 218, 218);
+      border: none;
+    }
+    .feature-titles {
+      font-weight: 700;
+    }
+    @media (max-width: 600px) {
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .links {
+        display: none;
+      }
+      .title-div {
+        background: none;
+        width: 100%;
+      }
+      .features {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 0%;
+      }
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="title-div">
+        <h2 class="t1">My "ONE STOP"</h2>
+        <div class="links">
+          <a href="./index.html"><h3>Home</h3></a>
+          <a href="./about.html"><h3>About</h3></a>
+          <a href="./explore.html"><h3>Explore</h3></a>
+          <a href="#"><h3>Blog</h3></a>
+          <a href="./contact.html"><h3>Contact Us</h3></a>
+        </div>
+      </div>
+      <div class="sub-main-explore">
+        <div class="img">
+          <img
+            class="blogging-gif"
+            src="./assets/blogging2.gif"
+            alt="blogging"
+          />
+        </div>
+        <div class="explore-text-main">
+          <h2 class="explore-title">Explore our blogs</h2>
+          <p>
+            Welcome to our blog, where we share inspiring stories, tips, and
+            insights related to mental and physical well-being. Our team of
+            writers and contributors are passionate about helping you lead a
+            healthier and more fulfilling life.
+          </p>
+
+          <!-- <p>We offer a wide range of interactive activities that include</p> -->
+        </div>
+      </div>
+      <div class="features">
+        <article class="each-feature">
+          <p class="feature-titles">Fun Ways to Stay Active Indoors</p>
+          <p>
+            Discover creative ways to keep moving, even when you're stuck
+            indoors. We'll share indoor workout routines and ideas for staying
+            physically active at home.
+          </p>
+        </article>
+        <article class="each-feature">
+          <p class="feature-titles">The Benefits of Mindfulness Meditation</p>
+          <p>
+            Learn how practicing mindfulness meditation can reduce stress,
+            improve focus, and promote emotional well-being. Find practical tips
+            to get started.
+          </p>
+        </article>
+        <article class="each-feature">
+          <p class="feature-titles">
+            Exploring New Hobbies for Mental Stimulation
+          </p>
+          <p>
+            Explore a range of hobbies that can engage your mind and provide a
+            sense of accomplishment. Hobbies are a great way to stimulate your
+            intellect.
+          </p>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
